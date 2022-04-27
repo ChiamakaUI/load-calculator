@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body{
+    font-family: 'Libre Baskerville', serif;
+}
+
+#content{
+    width: 80%;
+    /* border: 3px solid red; */
+    margin: 2% auto;
+    padding: 10px;
+}
+
+#content h1{
+    text-align: center;
+}
+
+.tracker{
+    font-size: 14px;
+    border-collapse: collapse;
+    /* width: 600px;  */
+    table-layout: fixed;
+    width: 100%;
+    
+}
+
+.tracker,
+.tracker * {
+    font-family: 'Libre Baskerville', serif;
+    /* font-size: 12px; */
+}
+
+.tracker th{
+    font-size: 1.15em;
+    text-align: left;
+    font-weight: normal;
+    color: #ffffff;
+    background: #009578;
+    padding: 7px;
+  text-align: center;
+}
+
+.tracker th,
+.tracker td{
+    padding: 0.75em;
+    /* padding: 7px; */
+    
+  text-align: center;
+    
+}
+
+.tracker__entries .tracker__row{
+    background: #eeeeeeee;
+}
+
+.tracker__entries .tracker__row:nth-child(odd){
+    background: #dddddd;
+}
+
+.tracker_name,
+.tracker_on,
+.tracker_quantity,
+.tracker_ac_watts,
+.tracker_ac_surge,
+.tracker_dc_watts,
+.tracker_hours,
+.tracker_watts{
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 1em;
+    height: 2.5em;
+    padding: 0.5em 0;  
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    text-align: right;
+    /* background: none; */
+}
+
+.tracker_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: black;
+    font-size: 1.5em;
+    height: auto;
+    width: auto;
+    /* font-size: 2.5em !important; */
+    /* font-size: 20px; */
+    margin: 0 auto;
+    /* margin-left: 0.5em; */
+    cursor: pointer;
+}
+
+
+/* .tracker_btn:hover{
+    background: rgba(0,0,0,0.1);
+} */
+
+.tracker__row--add{
+    border-top: 3px solid #333333;
+    border-bottom: 3px solid #333333;
+    background: #ffffff;
+}
+
+/* .tracker__row--add td{
+    text-align: right;
+} */
+
+.tracker_add{
+    display: inline-block;
+    padding: 0.8em 1em;
+    color: #fff;
+    background: #009578;
+    border: 1px solid #009578;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+}
+
+.tracker_add:hover{
+    /* background: rgba(0,0,0,0.1); */
+    background: #fff;
+    color: #009578;
+    border: 2px solid #009578;
+    font-weight: 800;
+}

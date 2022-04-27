@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Load Calculator</title>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Load Calculator</h1>
+
+      <table class="tracker">
+        <thead>
+          <tr>
+            <th>Appliance/ Load Name</th>
+            <th>On at the same time</th>
+            <th>Quantity</th>
+            <th>AC Watts</th>
+            <th>AC Surge</th>
+            <th>DC Watts</th>
+            <th>Hours on per day</th>
+            <th>Watts-Hours/Day</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="tracker__entries">
+          <tr class="tracker__row">
+            <td>
+              <input type="text" class="tracker_name"/>
+            </td>
+            <td>
+              <input type="checkbox" class="tracker_on"/>
+            </td>
+            <td>
+              <input type="number" class="tracker_quantity"/>
+            </td>
+            <td>
+              <input type="number" class="tracker_ac_watts" />
+            </td>
+            <td>
+              <input type="number" class="tracker_ac_surge"/>
+            </td>
+            <td>
+              <input type="number" class="tracker_dc_watts" />
+            </td>
+            <td>
+              <input type="number" class="tracker_hours"/>
+            </td>
+            <td>
+              <input type="number" class="tracker_watts" />
+            </td>
+            <td>
+              <button type="button" class="tracker_btn" ><i class="bi bi-trash-fill" title="Click here to delete entry"></i></button>
+            </td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr class="tracker__row tracker__row--add" >
+            <td colspan="4">
+              <button class="tracker_add">Add Load &plus;</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
